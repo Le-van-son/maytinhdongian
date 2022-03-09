@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>may tinh</title>
+</head>
+<body>
+<h1 id="kq">kết quả</h1>
+<input style="width: auto" value="12" id="a"> <input style="width: auto" value="12" id="b"><br>
+<br>
+<button onclick="bam1()">addition(+)</button> <button onclick="bam2()">Subtraction(-)</button> <button onclick="bam3()">multiplication(*)</button> <button onclick="bam4()">Division(/)</button>
+<script>
+let n1 = document.getElementById('a')
+let n2 = document.getElementById('b')
+function bam1(){
+    let cong = +n1.value+ +n2.value
+    document.getElementById('kq').innerHTML='hello=' +cong;
+}
+function bam2(){
+    let tru = n1.value-n2.value
+    document.getElementById('kq').innerHTML='hello=' +tru;
+}
+function bam3(){
+    let nhan = n1.value*n2.value
+    document.getElementById('kq').innerHTML='hello=' +nhan;
+}
+function bam4(){
+    let chia = n1.value/n2.value
+    document.getElementById('kq').innerHTML='hello=' +chia;
+}
+
+</script>
+
+</body>
+</html>
